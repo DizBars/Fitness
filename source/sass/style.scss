@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -13,16 +13,16 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+@import "global/container.scss";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/data-tabs";
+@import "blocks/tabs";
+@import "blocks/data-accordion.scss";
+@import "blocks/accordion";
+@import "blocks/custom-input.scss"
 
 // ---------------------------------
 
@@ -76,3 +76,4 @@
 
 // для любых transition обязательно указывайте transition-property
 // transition: $trans-default ❌ ---> transition: color $trans-default ✅
+

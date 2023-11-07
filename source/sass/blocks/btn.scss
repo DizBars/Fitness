@@ -1,18 +1,24 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 25px 55px;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
-  border: none;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -2px;
   cursor: pointer;
 
   transition: opacity $trans-default;
+  background-color: transparent;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+
 
   &:disabled {
     opacity: 0.5;
@@ -20,7 +26,73 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+    &--dark {
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+      transition: $trans-default;
+    }
+  }
+
+  &--gradient {
+    color: $color-sapphire;
+    outline: 2px solid $color-sapphire;
+    padding: 27px 44.5px;
+
+    @include hover-focus {
+      outline: none;
+      background: $red-to-blue;
+      color: $color-default-white;
+      transition: $trans-default;
+    }
+  }
+
+  &--tabs {
+    color: $color-sapphire;
+    outline: 1px solid #10265433;
+    padding: 18px 48px;
+    border: none;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    min-width: 260px;
+    margin: 0;
+    letter-spacing: 0;
+
+    @include hover-focus {
+      outline: 1px solid $color-sapphire;
+      transition: $trans-default;
+    }
+
+    @include active {
+      color: $color-default-white;
+      background: $red-to-blue;
+      outline: none;
+    }
+
+    &.is-active {
+      color: $color-default-white;
+      background: $red-to-blue;
+      outline: none;
+    }
+  }
+
+  &--aquamarine{
+    color: $color-sapphire;
+    outline: none;
+    padding: 9px 0;
+    border: none;
+    text-transform: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    min-width: 860px;
+    margin: 0;
+    letter-spacing: 0;
+
+    @include hover-focus {
+      transition: $trans-default;
+    }
   }
 }

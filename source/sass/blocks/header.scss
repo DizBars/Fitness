@@ -1,0 +1,21 @@
+.header {
+  background: $blue-to-red;
+  color: $color-default-white;
+  padding-bottom: 120px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 26px 0;
+}
+
+.header__top a {
+  color: $color-default-white;
+  font-size: 26px;
+  line-height: 26px;
+  font-family: $ff-roboto-condensed ;
+  font-weight: 700;
+  min-height: 26px;
+}
+

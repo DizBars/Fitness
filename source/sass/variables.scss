@@ -18,15 +18,18 @@ $color-gost-white:                  #f8f9fc;
 $color-torch-red:                   #ed0233;
 $color-black-russian:               #030a1a;
 $color-torch-red-err:               #ff121f;
-$color-sapphire:                    #102654;
-$color-sapphire:                    #102654;
-$color-sapphire:                    #102654;
-
+$color-spindle:                     #b6bdcc;
+$color-sapphire-opacity:            #102654E3;
+;
 
 // Gradient
 
 $red-to-blue:                    linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-$blue-to-red:                    conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$blue-to-red:                    linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+$border-gradient:                linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+$advantage-gradient:             linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+
+
 
 
 

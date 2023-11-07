@@ -1,0 +1,152 @@
+.jury {
+  position: relative;
+  width: 85vw;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.jury h3 {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+}
+
+.jury__button {
+  top: 65%;
+  display: block;
+  color: $color-sapphire;
+
+
+  &--prev {
+    left: -59px;
+  }
+
+  &--next {
+    right: -68px;
+  }
+}
+
+.jury__button::after {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.jury__container {
+  overflow: hidden;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.jury__list {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (40px * 3)) / 4);
+  gap: 40px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jury__item {
+  position: relative;
+  height: 294px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 18px;
+  background-size: cover;
+
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $color-sapphire-opacity;
+      box-shadow: 0px 0px 35px 0px #2A3B632B;
+    }
+  }
+}
+
+.jury__item img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.jury__item h4 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-default-white;
+  z-index: 3;
+}
+
+.jury__item div {
+  display: none;
+  font-family: $ff-roboto-condensed;
+}
+
+.jury__item:hover div,
+.jury__item:focus div,
+.jury__item:focus-within div {
+  display: block;
+  z-index: 2;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+}
+
+.jury__item:hover div::-webkit-scrollbar,
+.jury__item:focus div::-webkit-scrollbar,
+.jury__item:focus-within div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.jury__item div p {
+  margin: 0;
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-gost-white;
+  text-align: center;
+}
+
+.jury__item ul {
+  max-width: 170px;
+  padding-left: 21px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  list-style-type: disc;
+  color: $color-default-white;
+}
+
+

@@ -1,17 +1,20 @@
 .tabs {
   max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 
   [data-tabs="accordion"] {
     @media screen and (max-width: 767px) {
       margin: 10px 2% 0;
     }
 
-    > .tabs__control.is-active {
+    >.tabs__control.is-active {
       pointer-events: auto;
       opacity: 0.5;
     }
 
-    > .tabs__control {
+    >.tabs__control {
       @media screen and (max-width: 767px) {
         width: 100%;
         margin: 0;
@@ -21,16 +24,15 @@
   }
 
   [data-tabs="accordion"].is-active {
-    > .tabs__control {
+    >.tabs__control {
       opacity: 1;
     }
   }
 
   &__controls {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 10px;
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
@@ -41,10 +43,8 @@
     text-transform: uppercase;
     cursor: pointer;
     margin: 0 20px;
-    opacity: 0.5;
     min-width: auto;
     justify-content: center;
-    width: 25%;
 
     @media screen and (max-width: 1023px) {
       margin: 0 10px;
@@ -70,36 +70,28 @@
   }
 
   &__element {
-    padding: 25px;
-    width: 100%;
+    padding: 0;
 
     @media screen and (max-width: 767px) {
       padding: 15px;
     }
 
     p {
+      font-family: $ff-roboto-condensed;
+      color: $color-sapphire;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      max-width: 659px;
       margin: 0;
+      margin-top: 2px;
+
 
       &:not(:last-child) {
         margin: 0 0 20px 0;
       }
     }
 
-    &:nth-child(1) {
-      background-color: rgb(250, 235, 215);
-    }
-
-    &:nth-child(2) {
-      background-color: rgb(229, 250, 215);
-    }
-
-    &:nth-child(3) {
-      background-color: rgb(180, 188, 233);
-    }
-
-    &:nth-child(4) {
-      background-color: rgb(255, 187, 204);
-    }
   }
 
   &--unset .tabs__content {

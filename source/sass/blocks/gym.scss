@@ -1,0 +1,54 @@
+.gym__container {
+  display: flex;
+  gap: 145px;
+  flex-direction: row;
+  color: $color-sapphire;
+  padding: 120px 103px 235px 103px;
+  position: relative;
+}
+
+.gym__text-container {
+  width: 355px;
+}
+
+.gym__text-container h2 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.gym__text-container h3 {
+  font-family: $ff-roboto-condensed;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 95px;
+}
+
+.gym__text-container p {
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+}
+
+.gym__text-container p.gym__description--desktop {
+  margin-top: 8px;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  top: 408px;
+  left: 540px;
+}
+
+.gym__video-wrapper button {
+  position: absolute;
+  left: 102px;
+  top: 100px;
+}

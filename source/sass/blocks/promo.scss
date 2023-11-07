@@ -1,0 +1,150 @@
+.promo {
+  padding: 120px 0;
+  font-family: $ff-roboto-condensed;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.promo__right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: $color-resolution-blue;
+}
+
+.promo h2 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 70px;
+  font-family: $ff-alumni-sans;
+}
+
+.promo__year {
+  width: 560px;
+  background: $color-torch-red;
+  color: $color-default-white;
+  position: relative;
+  padding: 40px 325px 45px 45px;
+}
+
+.promo__year img{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.promo__year h3{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.promo__year span{
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.promo__year p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 169px;
+}
+
+.promo__year a{
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid $color-default-white;
+  text-transform: uppercase;
+  padding-bottom: 1px;
+}
+
+.promo__month {
+  border-image: $border-gradient;
+  border-width: 7px;
+  border-style: solid;
+  padding: 22px 28px 28px;
+  min-width: 560px;
+}
+
+.promo__month h3{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.promo__month p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 63px;
+}
+
+.promo__month a{
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $color-resolution-blue;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-resolution-blue;
+  padding-bottom: 1px;
+}
+
+.promo__sale {
+  border-image: $border-gradient;
+  border-width: 7px;
+  border-style: solid;
+  padding: 22px 28px 26px;
+  min-width: 560px;
+}
+
+.promo__sale h3{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.promo__sale p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 63px;
+}
+
+.promo__sale a{
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $color-resolution-blue;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-resolution-blue;
+  padding-bottom: 1px;
+}
+

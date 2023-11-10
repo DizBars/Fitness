@@ -4,7 +4,9 @@ import {initAccordions} from './modules/accordion/init-accordion';
 import {initTabs} from './modules/tabs/init-tabs';
 import './modules/tabs/tabs';
 import './modules/accordion/accordions';
-import {reviewsSlider, jurySlider} from './modules/slider/slider';
+import {jurySlider, reviewsSlider} from './modules/slider/slider';
+import {openSubType} from './modules/subscription';
+import './modules/scroll';
 
 // ---------------------------------
 
@@ -22,15 +24,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
+    const form = new Form();
+    window.form = form;
+    form.init();
+    initAccordions();
+    initTabs();
+    jurySlider();
+    reviewsSlider();
+    openSubType();
   });
-  const form = new Form();
-  window.form = form;
-  form.init();
-  initAccordions();
-  initTabs();
-  reviewsSlider();
-  jurySlider();
+
 });
 
 // ---------------------------------

@@ -1,6 +1,10 @@
 .accordion {
   //max-width: 500px;
-  width: 860px;
+  min-width: 860px;
+
+  @include vp-1365 {
+    min-width: 290px;
+  }
 
   & & {
     width: 90%;

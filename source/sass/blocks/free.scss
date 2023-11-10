@@ -1,8 +1,20 @@
 .free {
   background: $color-sapphire;
   color: $color-default-white;
-  padding: 60px 103px;
-  height: min-content;
+  padding-top: 56px;
+  padding-right: 170px;
+  padding-bottom: 70px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-right: 226px;
+    padding-bottom: 99px;
+  }
+}
+
+.free__wrapper {
+  margin-left: auto;
+  max-width: 410px;
 }
 
 .free h2{
@@ -12,12 +24,22 @@
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 33px;
+
+  @include vp-1365 {
+    margin-bottom: 31px;
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .form__wrapper {
   display: flex;
   flex-direction: row;
   gap: 30px;
+
+  @include vp-1365 {
+    gap: 60px;
+  }
 }
 
 .free form{
@@ -35,6 +57,10 @@
   font-weight: 400;
   line-height: 22px;
   color: $color-default-white;
+
+  @include vp-1365 {
+    width: 221px;
+  }
 }
 
 .free form input{
@@ -43,7 +69,7 @@
   min-height: 36px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819C50;
   border-radius: 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
@@ -51,6 +77,11 @@
   font-weight: 400;
   line-height: 22px;
   color: $color-default-white;
+
+  @include vp-1365 {
+    max-width: 221px;
+    min-height: 33px;
+  }
 
 
 
@@ -60,11 +91,22 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+
+    @include vp-1365 {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
 
-  @include hover-focus {
-    border: 1px solid #FFFFFF
+  @include hover {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 1;
+  }
+
+  @include focus{
+    border: 1px solid #FFFFFF;
+    opacity: 1;
   }
 }
 
@@ -75,4 +117,8 @@
   line-height: 12px;
   letter-spacing: 0.05em;
   text-align: center;
+
+  @include vp-1365 {
+    min-width: 504px;
+  }
 }

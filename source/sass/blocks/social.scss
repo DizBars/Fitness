@@ -1,0 +1,20 @@
+.social a{
+  width: 25px;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $color-black-russian;
+
+  @include hover-focus {
+    fill: $color-default-white;
+    background-color: $color-egyptian-blue;
+  }
+
+  @include active {
+    color: $color-sapphire;
+  }
+}
+

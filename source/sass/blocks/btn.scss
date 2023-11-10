@@ -4,7 +4,7 @@
 
   color: $color-default-white;
 
-  outline: 2px solid #FFFFFF;
+  outline: 2px solid $color-default-white;
   outline-offset: -2px;
   cursor: pointer;
 
@@ -19,10 +19,13 @@
   text-align: center;
   text-transform: uppercase;
 
+  @include vp-1365 {
+    padding: 20px 32px;;
+  }
+
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
@@ -31,6 +34,13 @@
       background-color: $color-default-white;
       color: $color-egyptian-blue;
       transition: $trans-default;
+      outline: 2px solid $color-default-white;
+    }
+
+    @include active {
+      color: $color-sapphire;
+      transition: $trans-default;
+      outline: 2px solid $color-default-white;
     }
   }
 
@@ -39,11 +49,19 @@
     outline: 2px solid $color-sapphire;
     padding: 27px 44.5px;
 
+    @include vp-1365 {
+      padding: 22px 44px;
+    }
+
     @include hover-focus {
       outline: none;
       background: $red-to-blue;
       color: $color-default-white;
       transition: $trans-default;
+    }
+
+    @include active {
+      opacity: 0.7;
     }
   }
 
@@ -59,9 +77,15 @@
     min-width: 260px;
     margin: 0;
     letter-spacing: 0;
+    outline-offset: -1px;
+
+    @include vp-1365 {
+      min-width: 162px;
+    }
 
     @include hover-focus {
       outline: 1px solid $color-sapphire;
+      outline-offset: -1px;
       transition: $trans-default;
     }
 
@@ -69,6 +93,7 @@
       color: $color-default-white;
       background: $red-to-blue;
       outline: none;
+      outline-offset: -1px;
     }
 
     &.is-active {
@@ -90,6 +115,15 @@
     min-width: 860px;
     margin: 0;
     letter-spacing: 0;
+
+    @include vp-1365 {
+      font-size: 22px;
+      line-height: 22px;
+      min-width: 290px;
+      width: 678px;
+      text-align: left;
+
+    }
 
     @include hover-focus {
       transition: $trans-default;

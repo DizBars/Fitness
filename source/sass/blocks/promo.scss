@@ -1,12 +1,21 @@
 .promo {
   padding: 120px 0;
   font-family: $ff-roboto-condensed;
+
+  @include vp-1365 {
+    padding: 100px 0;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: row;
   gap: 40px;
+
+  @include vp-1365 {
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 
 .promo__right-block {
@@ -14,6 +23,11 @@
   flex-direction: column;
   gap: 40px;
   color: $color-resolution-blue;
+
+  @include vp-1365 {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 
 .promo h2 {
@@ -26,6 +40,12 @@
   margin: 0;
   margin-bottom: 70px;
   font-family: $ff-alumni-sans;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__year {
@@ -34,6 +54,11 @@
   color: $color-default-white;
   position: relative;
   padding: 40px 325px 45px 45px;
+
+  @include vp-1365 {
+    width: 678px;
+    padding: 45px 325px 45px 45px;
+  }
 }
 
 .promo__year img{
@@ -48,6 +73,12 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 15px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
 }
 
 .promo__year span{
@@ -62,6 +93,12 @@
   line-height: 24px;
   margin-top: 25px;
   margin-bottom: 169px;
+
+  @include vp-1365 {
+    margin-bottom: 181px;
+    margin-top: 20px;
+    max-width: 189px;
+  }
 }
 
 .promo__year a{
@@ -76,12 +113,50 @@
   padding-bottom: 1px;
 }
 
+.promo__button--white {
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    border: none;
+    padding: 8px 10px;
+    outline: 1px solid $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.promo__button--blue {
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    border: none;
+    padding: 8px 10px;
+    outline: 1px solid $color-sapphire;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
 .promo__month {
   border-image: $border-gradient;
   border-width: 7px;
   border-style: solid;
   padding: 22px 28px 28px;
   min-width: 560px;
+
+  @include vp-1365 {
+    min-width: 324px;
+  }
 }
 
 .promo__month h3{
@@ -90,6 +165,11 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 10px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .promo__month p{
@@ -98,6 +178,11 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 63px;
+
+  @include vp-1365 {
+    max-width: 230px;
+    margin-bottom: 42px
+  }
 }
 
 .promo__month a{
@@ -118,6 +203,10 @@
   border-style: solid;
   padding: 22px 28px 26px;
   min-width: 560px;
+
+  @include vp-1365 {
+    min-width: 324px;
+  }
 }
 
 .promo__sale h3{
@@ -126,6 +215,11 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 10px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .promo__sale p{

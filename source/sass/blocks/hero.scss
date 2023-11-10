@@ -6,6 +6,11 @@
   margin: auto 0;
   min-width: 113px;
   margin-right: 2px;
+
+  @include vp-1365 {
+    margin: 149px 0;
+    margin-right: 26px;
+  }
 }
 
 .hero__column ul {
@@ -27,6 +32,12 @@
   margin: auto 0;
   margin-right: 70px;
   overflow-wrap: break-word;
+
+  @include vp-1365 {
+    margin: 31px 0;
+    margin-right: 30px;
+    width: 185px;
+  }
 }
 
 .hero__text-container h3 {
@@ -37,6 +48,11 @@
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .hero__text-container h4 {
@@ -47,11 +63,23 @@
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 50px;
+
+  @include vp-1365 {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0;
+  }
 }
 
 
 
 .hero__image {
   margin-right: 200px;
+
+  @include vp-1365 {
+    width: 324px;
+    height: 390px;
+    margin-right: 0;
+  }
 }
 

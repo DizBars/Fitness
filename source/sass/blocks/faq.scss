@@ -3,7 +3,11 @@
   background: $color-gost-white;
 
   @include vp-1365 {
-    padding: 100px 0 200px;
+    padding: 100px 0 188px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 195px;
   }
 }
 
@@ -21,5 +25,11 @@
     text-align: center;
     font-size: 42px;
     line-height: 42px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 37px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }

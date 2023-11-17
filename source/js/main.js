@@ -7,6 +7,7 @@ import './modules/accordion/accordions';
 import {jurySlider, reviewsSlider} from './modules/slider/slider';
 import {openSubType} from './modules/subscription';
 import './modules/scroll';
+import {embedVideo} from './modules/videoplayer';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     jurySlider();
     reviewsSlider();
     openSubType();
+    embedVideo();
   });
 
 });

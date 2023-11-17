@@ -21,38 +21,125 @@
     line-height: 42px;
     text-align: center;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+}
+
+.jury__button::after {
+  color: transparent;
+  font-size: 32px;
+  font-weight: 200;
+
+  @include vp-767 {
+    font-size: 20px;
+  }
+}
+
+.jury__button svg {
+  z-index: 4;
+  stroke: $color-sapphire;
+  position: absolute;
+  inset: 0 5px 0 0;
+  margin: auto;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .jury__button {
-  top: 65%;
+  top: 62%;
   display: block;
-  color: $color-sapphire;
 
   @include vp-1365 {
-    top: 62%;
+    top: 59%;
   }
 
+  @include vp-767 {
+    top: 63%;
+  }
 
   &--prev {
-    left: -59px;
+    left: -74px;
 
     @include vp-1365 {
+      left: -30px;
+    }
+
+    @include vp-767 {
       left: -14px;
     }
   }
 
   &--next {
-    right: -68px;
+    right: -78px;
+
+    svg {
+      inset: 0;
+    }
 
     @include vp-1365 {
-      right: -24px;
+      right: -33px;
+    }
+
+    @include vp-767 {
+      right: -16px;
     }
   }
 }
 
-.jury__button::after {
-  font-size: 32px;
-  font-weight: 200;
+.jury__button--prev {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include hover-focus {
+      border: 1px solid $color-sapphire;
+    }
+
+  @include active {
+    svg {
+      stroke: $color-default-white;
+    }
+
+      background-color: $color-sapphire;
+  }
+}
+
+.jury__button--next {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include hover-focus {
+      border: 1px solid $color-sapphire;
+    }
+
+  @include active {
+    svg {
+      stroke: $color-default-white;
+    }
+
+      background-color: $color-sapphire;
+  }
 }
 
 .jury__container {
@@ -64,13 +151,17 @@
   @include vp-1365 {
     width: 566px;
   }
+
+  @include vp-767 {
+    width: 226px;
+  }
 }
 
 .jury__list {
   position: relative;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% - (40px * 3)) / 4);
+  grid-auto-columns: calc((100% - 120px) / 4);
   gap: 40px;
   left: 0;
   margin: 0;
@@ -80,6 +171,11 @@
   @include vp-1365 {
     grid-auto-columns: calc((100% - 30px) / 2);
     gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-auto-columns: 100%;
+    gap: 0;
   }
 }
 
@@ -98,6 +194,11 @@
 
   @include vp-1365 {
     width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
   }
 
 
@@ -142,6 +243,11 @@
   @include vp-1365 {
     font-size: 20px;
     line-height: 20px
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 

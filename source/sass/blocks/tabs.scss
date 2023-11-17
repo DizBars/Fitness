@@ -6,6 +6,12 @@
 
   @include vp-1365 {
     flex-direction: column;
+    gap: 38px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    height: min-content;
   }
 
   [data-tabs="accordion"] {
@@ -42,6 +48,12 @@
       flex-direction: row;
     }
 
+    @include vp-767 {
+      gap: 8px;
+      height: min-content;
+      margin-bottom: 30px;
+    }
+
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
     }
@@ -62,7 +74,6 @@
     @media screen and (max-width: 767px) {
       margin: 10px 2% 0;
       padding: 10px;
-      width: 45%;
     }
 
     &.is-active {
@@ -80,9 +91,7 @@
   &__element {
     padding: 0;
 
-    @media screen and (max-width: 767px) {
-      padding: 15px;
-    }
+
 
     p {
       font-family: $ff-roboto-condensed;
@@ -95,7 +104,15 @@
       margin-top: 2px;
 
       @include vp-1365 {
+        margin-top: 11px;
         max-width: 550px;
+      }
+
+      @include vp-767 {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        width: 272px;
       }
 
 

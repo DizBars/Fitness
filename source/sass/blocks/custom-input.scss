@@ -5,9 +5,8 @@
   display: flex;
   padding: 0 0 28px;
 
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
+  @include vp-767 {
+    padding: 0;
   }
 
   label {
@@ -89,6 +88,10 @@
     position: absolute;
     left: 0;
     bottom: -2px;
+
+    @include vp-767 {
+      bottom: -24px;
+    }
 
     &.is-invalid {
       color: #ff0000;

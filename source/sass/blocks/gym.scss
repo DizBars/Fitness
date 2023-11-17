@@ -13,6 +13,12 @@
     padding: 100px 45px 184px 45px;
     gap: 36px;
   }
+
+  @include vp-767 {
+    padding: 70px 0 276px 0;
+    text-align: left;
+    gap: 50px;
+  }
 }
 
 .gym__text-container {
@@ -20,6 +26,10 @@
 
   @include vp-1365 {
     max-width: 502px;
+  }
+
+  @include vp-767 {
+    padding: 0 26px 0 15px;
   }
 }
 
@@ -36,6 +46,12 @@
     line-height: 42px;
     margin-bottom: 20px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 13px;
+  }
 }
 
 .gym__text-container h3 {
@@ -51,6 +67,12 @@
     line-height: 20px;
     margin-bottom: 36px;
   }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .gym__text-container p {
@@ -59,6 +81,11 @@
   font-weight: 300;
   line-height: 24px;
   margin: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .gym__text-container p.gym__description--desktop {
@@ -67,26 +94,32 @@
 
 .gym__video-wrapper {
   position: absolute;
-  top: 408px;
-  left: 540px;
+  inset: 408px 0 0 540px;
 
   @include vp-1365 {
-    top: 587px;
-    left: 251px;
+    inset: 587px auto 0 auto;
+    margin: auto;
+  }
+
+  @include vp-767 {
+    inset: 688px auto 0 auto;
+    margin: auto;
   }
 }
 
-.gym__video-wrapper iframe{
+.gym__video-player {
+  width: 364px;
+  height: 228px;
+
   @include vp-1365 {
     width: 265px;
     height: 167px;
   }
-}
 
-.gym__video-wrapper button {
-  position: absolute;
-  left: 102px;
-  top: 100px;
+  @include vp-767 {
+    width: 320px;
+    height: 167px;
+  }
 }
 
 .gym__video-overlay {
@@ -96,7 +129,32 @@
   height: 228px;
 
   @include vp-1365 {
+    inset: -102px 0 0 -133px;
+    margin: auto;
     width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    inset: -70px 0 0 -160px;
+    margin: auto;
+    width: 320px;
+    height: 167px;
+  }
+}
+
+.gym__video-overlay img {
+  z-index: 1;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 320px;
     height: 167px;
   }
 }
@@ -104,5 +162,133 @@
 .gym__description--desktop {
   @include vp-1365 {
     display: none;
+  }
+}
+
+.gym__button svg {
+  width: 15px;
+  height: 15px;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  left: 0;
+  margin: auto;
+  fill: $color-default-white;
+}
+
+.gym__button{
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+
+  &::before {
+    background: $red-to-blue;
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -14px;
+    margin: auto;
+    opacity: 0.2;
+    background: $color-torch-red;
+    border: 2px solid transparent;
+    mask: $red-to-blue padding-box, $red-to-blue;
+    mask-composite: exclude;
+  }
+
+  @include hover-focus {
+    svg {
+      fill: $color-sapphire;
+    }
+
+    &::before {
+      background: $color-default-white;
+    }
+
+    &::after {
+      background: $color-sapphire;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    svg {
+      fill: $color-sapphire;
+    }
+
+    &::before {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 58px;
+      height: 58px;
+      background: $color-default-white;
+    }
+
+    &::after {
+      opacity: 1;
+      border: solid 2px $color-sapphire;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+
+  @include vp-1365 {
+    width: 72px;
+    height: 72px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      width: 72px;
+      height: 72px;
+      left: 0;
+    }
+
+    @include active {
+      &::before {
+        width: 46px;
+        height: 46px;
+      }
+    }
   }
 }

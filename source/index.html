@@ -22,7 +22,7 @@
     <div class="container">
       <div class="header__top">
         <a class="header__logo-link">
-          <svg width="120" height="26">
+          <svg width="120" height="26" role="img">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -93,20 +93,18 @@
             <img src="img/content/gym-desktop.png" srcset="img/content/gym-desktop@2x.png 2x" alt="Фото зала.">
           </picture>
         </div>
-        <div class="gym__video-wrapper">
-          <div class="gym__video-overlay">
+        <div class="gym__video-wrapper" data-video="container">
+          <div class="gym__video-overlay" data-video="overlay">
             <picture>
               <source type="image/webp" srcset="img/content/overlay.webp 1x, img/content/overlay@2x.webp 2x">
                 <img src="img/content/overlay.png" srcset="img/content/overlay@2x.png 2x" width="364" height="228"  alt="Фото зала.">
             </picture>
-            <button type="button" class="visually-hidden">
-              Кнопка для запуска видео
+            <button type="button" class="gym__button" data-video="play-button">
+              <svg width="17" height="17" role="img">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
             </button>
           </div>
-          <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=RC-HLl5g52frIWUd"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -129,7 +127,7 @@
               <span>5000</span>
               <div>
                 <p>5000</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -141,7 +139,7 @@
               <span>1700</span>
               <div>
                 <p>1700</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -153,7 +151,7 @@
               <span>2700</span>
               <div>
                 <p>2700</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -169,7 +167,7 @@
               <span>30 000</span>
               <div>
                 <p>30 000</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -181,7 +179,7 @@
               <span>10 200</span>
               <div>
                 <p>10 200</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -193,7 +191,7 @@
               <span>16 200</span>
               <div>
                 <p>16 200</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -209,7 +207,7 @@
               <span>60 000</span>
               <div>
                 <p>60 000</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -221,7 +219,7 @@
               <span>20 400</span>
               <div>
                 <p>20 400</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -233,7 +231,7 @@
               <span>32 400</span>
               <div>
                 <p>32 400</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use xlink:href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
@@ -293,7 +291,6 @@
         <div class="event__jury jury">
           <h3>Жюри</h3>
           <div class="swiper__jury swiper jury__container">
-            <!-- Additional required wrapper -->
             <ul class="jury__list swiper-wrapper">
               <li class="jury__ratio-wrapper swiper-slide">
                 <div class="jury__item">
@@ -537,8 +534,16 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-button-prev jury__button jury__button--prev"></div>
-          <div class="swiper-button-next jury__button jury__button--next"></div>
+          <div class="swiper-button-prev jury__button jury__button--prev">
+            <svg width="16" height="32" role="img">
+              <use xlink:href="img/sprite.svg#left-arr"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next jury__button jury__button--next">
+            <svg width="16" height="32" role="img">
+              <use xlink:href="img/sprite.svg#right-arr"></use>
+            </svg>
+          </div>
         </div>
     </section>
     <section class="advantages">
@@ -553,26 +558,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Площадь</h3>
-                <p>Занимайтесь без очередей и толкучки</p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--comfort">
-              <div class="advantages__number">
-                <span>350</span>
-                <p>мест</p>
-              </div>
-              <div class="advantages__text-container">
-                <h3>Комфорт</h3>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item--blue">
-              <div class="advantages__number">
-                <span>100</span>
-                <h3>Тренажеров</h3>
-              </div>
-              <div class="advantages__text-container">
-                <p>Современные тренажеры на все группы мышц</p>
+                <p>Занимайтесь без очередей<br class="advantages__br"/> и толкучки</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--parking">
@@ -582,7 +568,26 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Собственная парковка</h3>
-                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                <p>Вы всегда найдете место для своей<br class="advantages__br"/> машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--blue">
+              <div class="advantages__number">
+                <span>100</span>
+                <h3>Тренажеров</h3>
+              </div>
+              <div class="advantages__text-container">
+                <p>Современные тренажеры на<br class="advantages__br"/> все группы мышц</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--comfort">
+              <div class="advantages__number">
+                <span>350</span>
+                <p>мест</p>
+              </div>
+              <div class="advantages__text-container">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки,<br class="advantages__br"/> душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--experience">
@@ -592,7 +597,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <p>Добивайтесь своих целей быстрее с<br class="advantages__br"/> профессиональным тренером</p>
               </div>
             </li>
           </ul>
@@ -655,7 +660,7 @@
               <div class="accordion" data-accordion="parent" data-single="">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Как стать
-                    членом фитнес-центра?</button>
+                    членом <br class="accordion__br--mobile"/> фитнес-центра?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
                     <div class="accordion__wrapper">
                       <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
@@ -686,7 +691,7 @@
                 </div>
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine " type="button" data-accordion="button">Сколько
-                    тренеров работает в клубе и какова их квалификация?</button>
+                    тренеров работает в клубе и какова <br class="accordion__br"/> их квалификация?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
                     <div class="accordion__wrapper">
                       <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
@@ -856,7 +861,6 @@
       <div class="container">
         <h2>Отзывы</h2>
         <div class="swiper__reviews swiper">
-          <!-- Additional required wrapper -->
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__ratio-wrapper swiper-slide">
               <picture>
@@ -904,8 +908,16 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-button-prev reviews__button reviews__button--prev"></div>
-        <div class="swiper-button-next reviews__button reviews__button--next"></div>
+        <div class="swiper-button-prev reviews__button reviews__button--prev">
+          <svg width="16" height="32" role="img">
+            <use xlink:href="img/sprite.svg#left-arr"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next reviews__button reviews__button--next">
+          <svg width="16" height="32" role="img">
+            <use xlink:href="img/sprite.svg#right-arr"></use>
+          </svg>
+        </div>
       </div>
     </section>
     <section class="connect">
@@ -988,25 +1000,25 @@
           </li>
         </ul>
       </nav>
-      <div class="social">
+      <div class="footer__social social">
         <ul>
           <li>
             <a href="https://vk.com/htmlacademy">
-              <svg width="13" height="8">
+              <svg width="13" height="8" role="img">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="https://ok.ru/">
-              <svg width="9" height="17">
+              <svg width="9" height="17" role="img">
                 <use xlink:href="img/sprite.svg#ok"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="https://www.reddit.com/">
-              <svg width="15" height="15">
+              <svg width="15" height="15" role="img">
                 <use xlink:href="img/sprite.svg#reddit"></use>
               </svg>
             </a>

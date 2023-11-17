@@ -6,7 +6,8 @@ const reviews = document.querySelector('.swiper__reviews');
 
 function jurySlider() {
   if (jury) {
-    const swiper = new Swiper(jury, {
+    // eslint-disable-next-line no-new, no-undef
+    new Swiper(jury, {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
@@ -38,7 +39,8 @@ function jurySlider() {
 
 function reviewsSlider() {
   if (reviews) {
-    const swiper = new Swiper(reviews, {
+    // eslint-disable-next-line no-new, no-undef
+    new Swiper(reviews, {
       slidesPerView: 'auto',
       loop: false,
       spaceBetween: 40,

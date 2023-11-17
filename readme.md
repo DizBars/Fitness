@@ -15,3 +15,8 @@
 
 ### Вся разработка ведётся в директории `source`
 ### Итоговый код попадает в директорию `build`
+
+ПРОВЕРКА:<br>
+<img src="https://github.com/asupstudent/fitness/workflows/project-check/badge.svg?branch=main"><br>
+ДЕПЛОЙ:<br>
+<img src="https://github.com/asupstudent/fitness/workflows/deploy-to-github-pages/badge.svg?branch=main"><br>

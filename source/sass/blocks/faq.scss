@@ -20,6 +20,7 @@
   text-align: left;
   margin: 0;
   margin-bottom: 52px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     text-align: center;

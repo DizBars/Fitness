@@ -1,5 +1,5 @@
 .subscription {
-  background: #F8F9FC;
+  background: #f8f9fc;
   padding-top: 125px;
   padding-bottom: 120px;
   text-align: center;
@@ -35,6 +35,7 @@
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 35px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 42px;
@@ -72,7 +73,7 @@
   bottom: 0;
   width: 349px;
   height: 2px;
-  background-color: #78787833;
+  background-color: rgba(120, 120, 120, 0.2);
 
   @include vp-1365 {
     width: 332px;
@@ -110,7 +111,7 @@
   @include hover-focus {
     outline: none;
     opacity: 1;
-    border-bottom: 2px solid #D10A42;
+    border-bottom: 2px solid #d10a42;
   }
 
   &:disabled {
@@ -119,8 +120,8 @@
   }
 }
 
-.subscription__buttons button.is-active {
-  border-bottom: 2px solid #D10A42;
+.subscription__buttons .is-active {
+  border-bottom: 2px solid #d10a42;
   opacity: 1;
 }
 
@@ -175,7 +176,7 @@
   }
 }
 
-.subscription__cards-list li.is-active {
+.subscription__cards-list li + .is-active {
   border-image: $border-gradient;
   border-width: 7px;
   border-style: solid;
@@ -194,6 +195,7 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 7px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 24px;
@@ -214,6 +216,7 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 68px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     margin-bottom: 75px;
@@ -253,6 +256,7 @@
   line-height: 90px;
   margin: 0;
   color: $color-egyptian-blue;
+  overflow-wrap: break-word;
 
   @include vp-767 {
     font-size: 48px;
@@ -265,9 +269,10 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   margin: 0;
   top: 130px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     top: 143px;
@@ -299,7 +304,7 @@
   }
 }
 
-p.subscription__description {
+p .subscription__description {
   @include vp-767 {
     padding-top: 2px;
     margin-bottom: 61px;

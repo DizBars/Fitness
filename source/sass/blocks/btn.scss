@@ -1,16 +1,12 @@
 .btn {
   display: inline-flex;
   padding: 25px 55px;
-
   color: $color-default-white;
-
   outline: 2px solid $color-default-white;
   outline-offset: -2px;
   cursor: pointer;
-
   transition: opacity $trans-default;
   background-color: transparent;
-
   font-family: $ff-roboto-condensed;
   font-size: 12px;
   font-weight: 700;
@@ -20,7 +16,7 @@
   text-transform: uppercase;
 
   @include vp-1365 {
-    padding: 20px 32px;;
+    padding: 20px 32px;
   }
 
 
@@ -29,7 +25,7 @@
     pointer-events: none;
   }
 
-    &--dark {
+  &--dark {
     @include hover-focus {
       background-color: $color-default-white;
       color: $color-egyptian-blue;
@@ -71,7 +67,7 @@
 
   &--tabs {
     color: $color-sapphire;
-    outline: 1px solid #10265433;
+    outline: 1px solid rgba(16, 38, 84, 0.2);
     padding: 20px 48px 16px;
     border: none;
     text-transform: none;
@@ -107,15 +103,9 @@
       outline: none;
       outline-offset: -1px;
     }
-
-    &.is-active {
-      color: $color-default-white;
-      background: $red-to-blue;
-      outline: none;
-    }
   }
 
-  &--aquamarine{
+  &--aquamarine {
     color: $color-sapphire;
     outline: none;
     padding: 9px 0;
@@ -155,3 +145,12 @@
   }
 }
 
+.btn--tabs.is-active {
+  color: $color-default-white;
+  background: $red-to-blue;
+  outline: none;
+}
+
+button {
+  user-select: none;
+}

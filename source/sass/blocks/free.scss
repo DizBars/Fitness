@@ -21,13 +21,14 @@
   max-width: 410px;
 }
 
-.free h2{
+.free h2 {
   font-size: 54px;
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 38px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     margin-bottom: 31px;
@@ -57,13 +58,13 @@
   }
 }
 
-.free form{
+.free form {
   display: flex;
   flex-direction: column;
   max-width: 410px;
 }
 
-.free form label{
+.free form label {
   margin: 0;
   width: 190px;
   background-color: transparent;
@@ -82,13 +83,13 @@
   }
 }
 
-.free form input{
+.free form input {
   margin: 0;
   max-width: 190px;
   min-height: 31px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #74819C50;
+  border-bottom: 1px solid rgba(116, 129, 156, 0.31);
   border-radius: 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
@@ -106,8 +107,6 @@
     max-width: 290px;
     min-height: 31px;
   }
-
-
 
   &::placeholder {
     color: $color-default-white;
@@ -129,12 +128,12 @@
 
 
   @include hover {
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid $color-default-white;
     opacity: 1;
   }
 
-  @include focus{
-    border: 1px solid #FFFFFF;
+  @include focus {
+    border: 1px solid $color-default-white;
     opacity: 1;
   }
 }

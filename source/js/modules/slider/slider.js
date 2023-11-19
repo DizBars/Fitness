@@ -55,5 +55,3 @@ function reviewsSlider() {
 }
 
 export {jurySlider, reviewsSlider};
-
-

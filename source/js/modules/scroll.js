@@ -6,5 +6,3 @@ scrollButton.addEventListener('click', scrollBuy);
 function scrollBuy() {
   scrollTarget.scrollIntoView({block: 'center', behavior: 'smooth'});
 }
-
-

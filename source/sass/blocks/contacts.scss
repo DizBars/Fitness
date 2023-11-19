@@ -1,7 +1,6 @@
 .contacts {
   padding: 60px 120px;
-  outline: 1px solid #74819C;
-  outline-offset: -1px;
+  border-top: 1px outset #74819c;
 
   @include vp-1365 {
     padding: 100px 133px;
@@ -22,6 +21,7 @@
   text-align: left;
   margin: 0;
   margin-bottom: 40px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 42px;
@@ -51,7 +51,7 @@
   }
 }
 
-.contacts__wrapper ul{
+.contacts__wrapper ul {
   list-style: none;
   font-family: $ff-roboto-condensed;
   padding: 0;
@@ -66,12 +66,13 @@
   }
 }
 
-.contacts__wrapper h3{
+.contacts__wrapper h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
   margin-bottom: 5px;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 22px;
@@ -86,23 +87,24 @@
   }
 }
 
-.contacts__wrapper p{
+.contacts__wrapper p {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   margin: 0;
+  overflow-wrap: break-word;
 
   @include vp-767 {
     line-height: 20px;
   }
 }
 
-.contacts__wrapper ul:first-child::after{
+.contacts__wrapper ul:first-child::after {
   content: "";
   position: absolute;
   height: 117px;
   width: 1px;
-  background-color: #74819C;
+  background-color: #74819c;
   right: -52px;
   top: -1px;
 

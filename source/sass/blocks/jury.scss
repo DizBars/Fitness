@@ -15,6 +15,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: $color-sapphire;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 42px;
@@ -64,34 +65,6 @@
   @include vp-767 {
     top: 63%;
   }
-
-  &--prev {
-    left: -74px;
-
-    @include vp-1365 {
-      left: -30px;
-    }
-
-    @include vp-767 {
-      left: -14px;
-    }
-  }
-
-  &--next {
-    right: -78px;
-
-    svg {
-      inset: 0;
-    }
-
-    @include vp-1365 {
-      right: -33px;
-    }
-
-    @include vp-767 {
-      right: -16px;
-    }
-  }
 }
 
 .jury__button--prev {
@@ -99,22 +72,28 @@
   height: 56px;
   border-radius: 50%;
   background-color: transparent;
+  left: -74px;
+
+  @include vp-1365 {
+    left: -30px;
+  }
 
   @include vp-767 {
+    left: -14px;
     width: 30px;
     height: 30px;
   }
 
   @include hover-focus {
-      border: 1px solid $color-sapphire;
-    }
+    border: 1px solid $color-sapphire;
+  }
 
   @include active {
     svg {
       stroke: $color-default-white;
     }
 
-      background-color: $color-sapphire;
+    background-color: $color-sapphire;
   }
 }
 
@@ -123,22 +102,32 @@
   height: 56px;
   border-radius: 50%;
   background-color: transparent;
+  right: -78px;
+
+  svg {
+    inset: 0;
+  }
+
+  @include vp-1365 {
+    right: -33px;
+  }
 
   @include vp-767 {
+    right: -16px;
     width: 30px;
     height: 30px;
   }
 
   @include hover-focus {
-      border: 1px solid $color-sapphire;
-    }
+    border: 1px solid $color-sapphire;
+  }
 
   @include active {
     svg {
       stroke: $color-default-white;
     }
 
-      background-color: $color-sapphire;
+    background-color: $color-sapphire;
   }
 }
 
@@ -187,7 +176,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
   padding-top: 30px;
   padding-bottom: 18px;
   background-size: cover;
@@ -211,7 +199,7 @@
       top: 0;
       bottom: 0;
       background-color: $color-sapphire-opacity;
-      box-shadow: 0px 0px 35px 0px #2A3B632B;
+      box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
     }
   }
 }
@@ -239,10 +227,11 @@
   line-height: 22px;
   color: $color-default-white;
   z-index: 3;
+  overflow-wrap: break-word;
 
   @include vp-1365 {
     font-size: 20px;
-    line-height: 20px
+    line-height: 20px;
   }
 
   @include vp-767 {
@@ -280,6 +269,7 @@
   line-height: 24px;
   color: $color-gost-white;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .jury__item ul {
@@ -296,5 +286,3 @@
   list-style-type: disc;
   color: $color-default-white;
 }
-
-

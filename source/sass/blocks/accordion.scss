@@ -1,5 +1,4 @@
 .accordion {
-  //max-width: 500px;
   min-width: 860px;
   margin-top: -1px;
 
@@ -174,6 +173,10 @@
 
 .accordion__br--mobile {
   display: none;
+
+  @include vp-1365 {
+    display: none;
+  }
 
   @include vp-767 {
     display: block;

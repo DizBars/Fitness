@@ -1,7 +1,7 @@
 .free {
   background: $color-sapphire;
   color: $color-default-white;
-  padding-top: 59px;
+  padding-top: 60px;
   padding-right: 170px;
   padding-bottom: 59px;
 
@@ -27,7 +27,7 @@
   line-height: 54px;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 38px;
 
   @include vp-1365 {
     margin-bottom: 31px;
@@ -85,7 +85,7 @@
 .free form input{
   margin: 0;
   max-width: 190px;
-  min-height: 36px;
+  min-height: 31px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819C50;

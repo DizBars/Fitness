@@ -1,36 +1,30 @@
-.footer {
+.footer__bottom {
   background: $color-black-russian;
   color: $color-default-white;
-  padding: 41px 0 39px;
-
-  @include vp-1365 {
-    padding: 46px 0 44px;
-  }
-
-  @include vp-767 {
-    padding: 27px 0 45px;
-  }
-}
-
-.footer__container {
+  padding: 40px 103px 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
+  @include vp-1365 {
+    padding: 46px 45px 44px;
+  }
 
   @include vp-767 {
     flex-direction: column;
     align-items: start;
-    padding: 0;
+    padding: 27px 0 45px;
   }
 }
 
-.footer h2{
+.footer__bottom h2{
   margin: 0;
   font-family: $ff-roboto-condensed;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin-right: 245px;
+  margin-right: 235px;
 
   @include vp-1365 {
     font-size: 22px;
@@ -47,17 +41,24 @@
   }
 }
 
-.footer__container nav ul {
+.footer__bottom nav {
+  margin-right: 250px;
+
+  @include vp-1365 {
+    margin-right: 0;
+  }
+}
+
+.footer__bottom nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 21px;
   margin: 0;
   padding: 0;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
-  margin-right: 262px;
+  line-height: 25px;
 
   @include vp-1365 {
     margin-right: 40px;
@@ -73,7 +74,7 @@
   }
 }
 
-.footer__container nav ul a {
+.footer__bottom nav ul a {
   padding: 5px 10px;
 
   @include hover {
@@ -86,7 +87,7 @@
   }
 }
 
-.footer__container ul {
+.footer__bottom ul {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -95,13 +96,13 @@
   align-items: center;
 }
 
-.footer__container ul a {
+.footer__bottom ul a {
   color: $color-default-white;
   cursor: pointer;
   border: none;
 }
 
-.footer__container ul li {
+.footer__bottom ul li {
   display: inline-block;
   height: 25px;
 }

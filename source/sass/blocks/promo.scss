@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 71px 0 70px;
   }
 }
 
@@ -198,7 +198,7 @@
   border-image: $border-gradient;
   border-width: 7px;
   border-style: solid;
-  padding: 22px 28px 28px;
+  padding: 22px 28px 27px;
   min-width: 560px;
 
   @include vp-1365 {

@@ -53,6 +53,10 @@
       padding: 22px 44px;
     }
 
+    @include vp-767 {
+      padding: 23px 45px 21px;
+    }
+
     @include hover-focus {
       outline: none;
       background: $red-to-blue;
@@ -68,7 +72,7 @@
   &--tabs {
     color: $color-sapphire;
     outline: 1px solid #10265433;
-    padding: 18px 48px;
+    padding: 20px 48px 16px;
     border: none;
     text-transform: none;
     font-size: 18px;
@@ -131,6 +135,10 @@
       width: 678px;
       text-align: left;
       padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      min-height: 40px;
     }
 
     @include vp-767 {

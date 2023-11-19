@@ -16,7 +16,3 @@
 ### Вся разработка ведётся в директории `source`
 ### Итоговый код попадает в директорию `build`
 
-ПРОВЕРКА:<br>
-<img src="https://github.com/DizBars/fitness/workflows/project-check/badge.svg?branch=main"><br>
-ДЕПЛОЙ:<br>
-<img src="https://github.com/DizBars/fitness/workflows/deploy-to-github-pages/badge.svg?branch=main"><br>

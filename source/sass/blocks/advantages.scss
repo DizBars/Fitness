@@ -1,13 +1,13 @@
 .advantages {
   background: $color-gost-white;
-  padding: 120px 60px 105px;
+  padding: 121px 60px 103px;
 
   @include vp-1365 {
     padding: 100px 0 84px;
   }
 
   @include vp-767 {
-    padding: 70px 0 35px;
+    padding: 70px 0 34px;
     text-align: center;
   }
 }
@@ -62,7 +62,7 @@
     @include vp-1365 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1, 92px 262px 92px);
-      grid-column-gap: 50px;
+      grid-column-gap: 51px;
       grid-row-gap: 40px;
 
       .advantages__item--square { grid-area: 1 / 1 / 2 / 2; }

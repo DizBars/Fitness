@@ -1,6 +1,7 @@
 .contacts {
   padding: 60px 120px;
-  border-top: 1px solid #74819C;
+  outline: 1px solid #74819C;
+  outline-offset: -1px;
 
   @include vp-1365 {
     padding: 100px 133px;

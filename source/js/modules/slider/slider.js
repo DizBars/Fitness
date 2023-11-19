@@ -21,6 +21,7 @@ function jurySlider() {
         320: {
           slidesPerView: 1,
           spaceBetween: 0,
+          initialSlide: 2,
         },
         768: {
           slidesPerView: 2,
@@ -30,7 +31,7 @@ function jurySlider() {
         1200: {
           slidesPerView: 4,
           spaceBetween: 40,
-          initialSlide: 2,
+          initialSlide: 0,
         },
       },
     });

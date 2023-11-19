@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Зал вашей мечты">
   <title>Fitness</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -22,9 +22,10 @@
   <header class="header" data-test="hero">
     <div class="container">
       <div class="header__top">
-        <a class="header__logo-link">
+        <a class="header__logo-link" href="#">
+          <span class="visually-hidden">Ссылка на главную</span>
           <svg width="120" height="26" role="img">
-            <use xlink:href="img/sprite.svg#logo"></use>
+            <use href="img/sprite.svg#logo"></use>
           </svg>
         </a>
         <a class="header__tel-link" href="tel:88005555555">
@@ -49,7 +50,7 @@
         <div class="hero__text-container">
           <h3 class="hero__city">ОМСК</h3>
           <h4 class="hero__fitness">Фитнес центр</h4>
-          <button type="button" class="hero__button btn btn--dark" data-scroll>Купить абонемент</button>
+          <button class="hero__button btn btn--dark" type="button"  data-scroll="#">Купить абонемент</button>
         </div>
         <div class="hero__image">
           <picture>
@@ -77,7 +78,7 @@
             зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
           <p class="gym__description gym__description--desktop">В зале расположены отдельная зона для Crossfit и
             кардио-зона с 40 тренажерами. Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий. </p>
+            несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="gym__image-wrapper">
           <picture>
@@ -91,7 +92,7 @@
               srcset="img/content/gym-mobile.png 1x, img/content/gym-mobile@2x.png 2x">
             <source type="image/png" media="(max-width: 1365px)"
               srcset="img/content/gym-tablet.png 1x, img/content/gym-tablet@2x.png 2x">
-            <img src="img/content/gym-desktop.png" srcset="img/content/gym-desktop@2x.png 2x" alt="Фото зала.">
+            <img src="img/content/gym-desktop.png" width="660" height="401" srcset="img/content/gym-desktop@2x.png 2x" alt="Фото зала.">
           </picture>
         </div>
         <div class="gym__video-wrapper" data-video="container">
@@ -100,27 +101,28 @@
               <source type="image/webp" srcset="img/content/overlay.webp 1x, img/content/overlay@2x.webp 2x">
                 <img src="img/content/overlay.png" srcset="img/content/overlay@2x.png 2x" width="364" height="228"  alt="Фото зала.">
             </picture>
-            <button type="button" class="gym__button" data-video="play-button">
+            <button class="gym__button" type="button" data-video="play-button">
               <svg width="17" height="17" role="img">
-                <use xlink:href="img/sprite.svg#play"></use>
+                <use href="img/sprite.svg#play"></use>
               </svg>
+              <span class="visually-hidden">Ссылка на reddit академии.</span>
             </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="subscription" data-subscription data-test="price">
+    <section class="subscription" data-subscription="container" data-test="price">
       <div class="subscription__container container">
         <h2>Абонeменты</h2>
         <div class="subscription__buttons">
-          <button class="subscription__button is-active" type="button" data-subscription-control data-index-sub="1">1
+          <button class="subscription__button is-active" type="button" data-subscription="control" data-index-sub="1">1
             месяц</button>
-          <button class="subscription__button" type="button" data-subscription-control data-index-sub="2">6
+          <button class="subscription__button" type="button" data-subscription="control" data-index-sub="2">6
             месяцев</button>
-          <button class="subscription__button" type="button" data-subscription-control data-index-sub="3">12
+          <button class="subscription__button" type="button" data-subscription="control" data-index-sub="3">12
             месяцев</button>
         </div>
-        <div class="subscription__cards-list is-active" data-subscription-element id="1">
+        <div class="subscription__cards-list is-active" data-subscription="element" id="1">
           <ul>
             <li tabindex="0">
               <h3>С тренером</h3>
@@ -129,19 +131,19 @@
               <div>
                 <p>5000</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
             </li>
-            <li tabindex="0" class="is-active">
+            <li class="is-active" tabindex="0">
               <h3>Дневной</h3>
               <p>с 8:00 до 17:00</p>
               <span>1700</span>
               <div>
                 <p>1700</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient is-active" href="stub-page.html">Купить абонемент</a>
@@ -153,14 +155,14 @@
               <div>
                 <p>2700</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
             </li>
           </ul>
         </div>
-        <div class="subscription__cards-list " data-subscription-element id="2">
+        <div class="subscription__cards-list " data-subscription="element" id="2">
           <ul>
             <li>
               <h3>С тренером</h3>
@@ -169,7 +171,7 @@
               <div>
                 <p>30 000</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
@@ -181,7 +183,7 @@
               <div>
                 <p>10 200</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient is-active" href="stub-page.html">Купить абонемент</a>
@@ -193,14 +195,14 @@
               <div>
                 <p>16 200</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
             </li>
           </ul>
         </div>
-        <div class="subscription__cards-list " data-subscription-element id="3">
+        <div class="subscription__cards-list " data-subscription="element" id="3">
           <ul>
             <li>
               <h3>С тренером</h3>
@@ -209,7 +211,7 @@
               <div>
                 <p>60 000</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
@@ -221,7 +223,7 @@
               <div>
                 <p>20 400</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient is-active" href="stub-page.html">Купить абонемент</a>
@@ -233,7 +235,7 @@
               <div>
                 <p>32 400</p>
                 <svg width="30" height="42" role="img">
-                  <use xlink:href="img/sprite.svg#rouble"></use>
+                  <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a class="btn btn--gradient" href="stub-page.html">Купить абонемент</a>
@@ -247,7 +249,7 @@
             <source type="image/webp" srcset="img/content/weight-plate.webp 1x, img/content/weight-plate@2x.webp  2x">
             <source type="image/png" media="(max-width: 1365px)"
               srcset="img/content/weight-plate-tablet.png 1x, img/content/weight-plate-tablet@2x.png 2x">
-            <img src="img/content/weight-plate.png" srcset="img/content/weight-plate@2x.png 2x" alt="weight-plate">
+            <img src="img/content/weight-plate.png" width="321" height="384" srcset="img/content/weight-plate@2x.png 2x" alt="weight-plate.">
           </picture>
         </div>
       </div>
@@ -264,8 +266,8 @@
                 <dd class="event__list-detail">7<small class="event__list-detail-reduce-text">Марта 2019</small></dd>
               </div>
               <div class="event__list-item">
-                <dt class="event__list-term event__list-term">Время</dt>
-                <dd class="event__list-detail event__list-detail">12:00</dd>
+                <dt class="event__list-term">Время</dt>
+                <dd class="event__list-detail">12:00</dd>
               </div>
             </dl>
           </div>
@@ -537,12 +539,12 @@
           </div>
           <div class="swiper-button-prev jury__button jury__button--prev">
             <svg width="16" height="32" role="img">
-              <use xlink:href="img/sprite.svg#left-arr"></use>
+              <use href="img/sprite.svg#left-arr"></use>
             </svg>
           </div>
           <div class="swiper-button-next jury__button jury__button--next">
             <svg width="16" height="32" role="img">
-              <use xlink:href="img/sprite.svg#right-arr"></use>
+              <use href="img/sprite.svg#right-arr"></use>
             </svg>
           </div>
         </div>
@@ -560,7 +562,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Площадь</h3>
-                <p>Занимайтесь без очередей<br class="advantages__br"/> и толкучки</p>
+                <p>Занимайтесь без очередей<br class="advantages__br"> и толкучки</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--parking">
@@ -570,7 +572,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Собственная парковка</h3>
-                <p>Вы всегда найдете место для своей<br class="advantages__br"/> машины на нашей парковке</p>
+                <p>Вы всегда найдете место для своей<br class="advantages__br"> машины на нашей парковке</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--blue">
@@ -579,7 +581,7 @@
                 <h3>Тренажеров</h3>
               </div>
               <div class="advantages__text-container">
-                <p>Современные тренажеры на<br class="advantages__br"/> все группы мышц</p>
+                <p>Современные тренажеры на<br class="advantages__br"> все группы мышц</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--comfort">
@@ -589,7 +591,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Комфорт</h3>
-                <p>Просторные раздевалки,<br class="advantages__br"/> душевые, фен, Wi-Fi, кулеры</p>
+                <p>Просторные раздевалки,<br class="advantages__br"> душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--experience">
@@ -599,7 +601,7 @@
               </div>
               <div class="advantages__text-container">
                 <h3>Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с<br class="advantages__br"/> профессиональным тренером</p>
+                <p>Добивайтесь своих целей быстрее с<br class="advantages__br"> профессиональным тренером</p>
               </div>
             </li>
           </ul>
@@ -626,7 +628,7 @@
                 srcset="img/content/promo-mobile.png 1x, img/content/promo-mobile@2x.png 2x">
               <source type="image/png" media="(max-width: 1365px)"
                 srcset="img/content/promo-tablet.png 1x, img/content/promo-tablet@2x.png 2x">
-              <img src="img/content/promo.png" srcset="img/content/promo@2x.png 2x" alt="Фото зала.">
+              <img src="img/content/promo.png" width="280" height="462" srcset="img/content/promo@2x.png 2x" alt="Фото зала.">
             </picture>
           </div>
           <div class="promo__right-block">
@@ -659,10 +661,10 @@
           </div>
           <div class="tabs__content" style="height: 212px;">
             <div class="tabs__element  is-active" data-tabs="element">
-              <div class="accordion" data-accordion="parent" data-single="">
+              <div class="accordion" data-accordion="parent" data-single="#">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Как стать
-                    членом <br class="accordion__br--mobile"/> фитнес-центра?</button>
+                    членом<br class="accordion__br--mobile">фитнес-центра?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
                     <div class="accordion__wrapper">
                       <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
@@ -671,7 +673,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+                  <button class="accordion__button btn btn--aquamarine" type="button"
                     data-accordion="button">Где можно посмотреть расписание?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 121px;">
                     <div class="accordion__wrapper">
@@ -693,7 +695,7 @@
                 </div>
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine " type="button" data-accordion="button">Сколько
-                    тренеров работает в клубе и какова <br class="accordion__br"/> их квалификация?</button>
+                    тренеров работает в клубе и какова<br class="accordion__br">их квалификация?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
                     <div class="accordion__wrapper">
                       <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
@@ -704,7 +706,7 @@
               </div>
             </div>
             <div class="tabs__element" data-tabs="element">
-              <div class="accordion" data-accordion="parent" data-single="">
+              <div class="accordion" data-accordion="parent" data-single="#">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Занятия с
                     тренером входят в абонемент?</button>
@@ -718,7 +720,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+                  <button class="accordion__button btn btn--aquamarine" type="button"
                     data-accordion="button">Можно ли заморозить абонемент?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 121px;">
                     <div class="accordion__wrapper">
@@ -756,7 +758,7 @@
               </div>
             </div>
             <div class="tabs__element" data-tabs="element">
-              <div class="accordion" data-accordion="parent" data-single="">
+              <div class="accordion" data-accordion="parent" data-single="#">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Предлагает
                     ли клуб услуги по консультированию по вопросам питания?</button>
@@ -768,7 +770,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+                  <button class="accordion__button btn btn--aquamarine" type="button"
                     data-accordion="button">Проводятся ли в клубе какие-либо мероприятия или соревнования?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 121px;">
                     <div class="accordion__wrapper">
@@ -800,7 +802,7 @@
               </div>
             </div>
             <div class="tabs__element" data-tabs="element">
-              <div class="accordion" data-accordion="parent" data-single="">
+              <div class="accordion" data-accordion="parent" data-single="#">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">Есть в
                     фитнес-центре дресс-код?</button>
@@ -810,20 +812,19 @@
                         Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
                         шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
                         домашних
-                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion__element " data-accordion="element">
-                  <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+                  <button class="accordion__button btn btn--aquamarine" type="button"
                     data-accordion="button">Можно ли приводить с собой детей на тренировки?</button>
                   <div class="accordion__content" data-accordion="content" style="max-height: 121px;">
                     <div class="accordion__wrapper">
                       <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
                         Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
                         шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних
-                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -835,8 +836,7 @@
                       <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
                         Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
                         шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних
-                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -848,8 +848,7 @@
                       <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
                         Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
                         шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних
-                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
@@ -912,12 +911,12 @@
         </div>
         <div class="swiper-button-prev reviews__button reviews__button--prev">
           <svg width="16" height="32" role="img">
-            <use xlink:href="img/sprite.svg#left-arr"></use>
+            <use href="img/sprite.svg#left-arr"></use>
           </svg>
         </div>
         <div class="swiper-button-next reviews__button reviews__button--next">
           <svg width="16" height="32" role="img">
-            <use xlink:href="img/sprite.svg#right-arr"></use>
+            <use href="img/sprite.svg#right-arr"></use>
           </svg>
         </div>
       </div>
@@ -933,15 +932,15 @@
                 <div class="form__wrapper">
                   <div class="custom-input" data-validate-type="text" data-limitation="name"
                     data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Проверьте корректность ввода" data-required="">
+                    data-message-extra="Проверьте корректность ввода" data-required="#">
                     <label>
                       <input type="text" name="user-name" placeholder="Имя" aria-invalid="false">
                     </label>
                   </div>
-                  <div class="custom-input" data-validate-type="phone" data-on-input-validate=""
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="#"
                     data-message-base="Поле обязательно к заполнению"
                     data-message-extra="Проверьте корректность ввода"
-                    data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                    data-message-success="Поле заполнено верно" data-required="#" data-phone-length="18">
                     <label>
                       <input type="tel" name="user-phone" placeholder="Телефон" aria-invalid="false">
                     </label>
@@ -1005,22 +1004,25 @@
           <ul>
             <li>
               <a href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Ссылка на вк академии.</span>
                 <svg width="13" height="8" role="img">
-                  <use xlink:href="img/sprite.svg#vk"></use>
+                  <use href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="https://ok.ru/">
+                <span class="visually-hidden">Ссылка на одноклассники академии.</span>
                 <svg width="9" height="17" role="img">
-                  <use xlink:href="img/sprite.svg#ok"></use>
+                  <use href="img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="https://www.reddit.com/">
+                <span class="visually-hidden">Ссылка на reddit академии.</span>
                 <svg width="15" height="15" role="img">
-                  <use xlink:href="img/sprite.svg#reddit"></use>
+                  <use href="img/sprite.svg#reddit"></use>
                 </svg>
               </a>
             </li>
@@ -1028,6 +1030,7 @@
         </div>
       </section>
     </footer>
+  </main>
 
 
   <script src="js/vendor.min.js"></script>

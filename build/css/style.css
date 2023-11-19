@@ -2758,6 +2758,19 @@ button,
   }
 }
 
+@media (max-width: 1365px) {
+  .gym__image-wrapper img {
+    width: 678px;
+    height: 345px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__image-wrapper img {
+    width: 320px;
+    height: 313px;
+  }
+}
+
 .subscription {
   background: #F8F9FC;
   padding-top: 125px;
@@ -4242,8 +4255,16 @@ button,
   right: 0;
   top: 0;
 }
+@media (max-width: 1365px) {
+  .promo__year img {
+    width: 399px;
+    height: 462px;
+  }
+}
 @media (max-width: 767px) {
   .promo__year img {
+    width: 290px;
+    height: 330px;
     top: 300px;
   }
 }

@@ -1,11 +1,11 @@
-const subButtons = document.querySelectorAll('[data-subscription-control]');
-const subCards = document.querySelectorAll('[data-subscription-element]');
+const subButtons = document.querySelectorAll('[data-subscription="control"]');
+const subCards = document.querySelectorAll('[data-subscription="element"]');
 
 
 function openSubType() {
   if (subButtons || subCards) {
     subButtons.forEach((button) => {
-      button.addEventListener('click', function (evt) {
+      button.addEventListener('click', (evt) => {
         evt.preventDefault();
         const id = evt.target.getAttribute('data-index-sub');
 
@@ -24,4 +24,4 @@ function openSubType() {
   }
 }
 
-export {openSubType};
+export { openSubType };
